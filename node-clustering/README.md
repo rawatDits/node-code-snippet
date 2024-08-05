@@ -7,6 +7,7 @@ This is a simple Node.js application demonstrating the use of clustering to impr
 Clustering in Node.js allows you to create multiple instances of a Node.js server to take advantage of multi-core systems. By distributing the workload across multiple processes, you can improve the performance and scalability of your application.
 
 In a clustered environment:
+
 - The **master** process manages the worker processes.
 - Each **worker** process runs a copy of your Node.js application and can handle requests independently.
 - The master process ensures that the worker processes are automatically restarted if they fail.
@@ -28,4 +29,11 @@ In a clustered environment:
 
    ```bash
    git clone https://github.com/rawatDits/node-code-snippet.git
-   cd node-clustering
+
+   ```
+
+2. Run following commands to install packages and start server:
+   ```bash
+   npm install
+   node server.js
+   ```
